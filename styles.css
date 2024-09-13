@@ -1,0 +1,150 @@
+/* Стили для основного фона и текста */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Стили для шапки */
+header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li .dropbtn:hover {
+    background-color: #575757;
+}
+
+/* Стили для выпадающего меню */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Стили для основного заголовка */
+main h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+/* Стили для карусели */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.carousel .slides {
+    display: flex;
+    width: 300%;
+    transition: margin-left 0.6s;
+}
+
+.carousel input {
+    display: none;
+}
+
+.carousel .slide {
+    width: 33.3333%;
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.carousel .navigation label {
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+#slide1:checked ~ .slides {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .slides {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ .slides {
+    margin-left: -200%;
+}
+
+/* Стили для статьи */
+article {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
